@@ -1,0 +1,20 @@
+# The markers need to be defined in the pytest.ini file
+import pytest
+
+
+@pytest.mark.great
+def test_greater():
+   num = 101
+   assert num > 100
+
+
+@pytest.mark.great
+def test_greater_equal():
+   num = 100
+   assert num >= 100
+
+
+@pytest.mark.others
+def test_less():
+   num = 100
+   assert num < 200
