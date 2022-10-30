@@ -49,9 +49,6 @@ pipenv run pytest -m great
 If you are installing using a pipenv environment you should always install your packages using pipenv, this way it will update your pipfile.lock file. Also be careful because pip install <package> will pretty much work anywhere, it's not installing packages to your virtual environment, it's installing them into your computer. Pipenv will update your Pipfile.lock and actually install into your pipenv virtual enviroment if you have one open.
 
 It's rarely a good idea to pip install <package> outside of a virtualenv.
-
-
-
 # Unittest
 ```
 pipenv run python tests/assertion/test_unittest_special_assertions.py
