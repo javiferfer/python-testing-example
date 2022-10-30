@@ -1,4 +1,4 @@
-# Pytest mocks
+# Pipenv
 
 Install from Pipfile, if there is one:
 ```
@@ -22,6 +22,8 @@ To deactivate the pipenv:
 ```
 deactivate
 ```
+
+# Pytest
 
 To run the tests:
 ```
@@ -47,6 +49,19 @@ pipenv run pytest -m great
 If you are installing using a pipenv environment you should always install your packages using pipenv, this way it will update your pipfile.lock file. Also be careful because pip install <package> will pretty much work anywhere, it's not installing packages to your virtual environment, it's installing them into your computer. Pipenv will update your Pipfile.lock and actually install into your pipenv virtual enviroment if you have one open.
 
 It's rarely a good idea to pip install <package> outside of a virtualenv.
+
+
+
+# Unittest
+```
+pipenv run python tests/assertion/test_unittest_special_assertions.py
+```
+
+```
+pipenv run python -m unittest discover
+```
+
+If the above command is not finding any tests is becuase you didn't create a __init__.py for every folder: https://stackoverflow.com/questions/5088960/python-m-unittest-discover-does-not-discover-tests
 
 # References
 
